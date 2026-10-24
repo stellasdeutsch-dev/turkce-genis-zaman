@@ -120,6 +120,8 @@ mark{background:none;color:inherit}
 .story{font-size:clamp(18px,4.8vw,22px);line-height:1.5;margin:22px auto 0}
 .story p{margin:0 0 12px}
 .story .nar{color:var(--mute)}
+.story .dl{padding:2px 0 2px 14px;border-left:3px solid var(--sky);margin-bottom:8px}
+.story .dl.th{border-color:#8ED15C;margin-left:18px}
 .ol{display:inline-block;padding:2px 12px 4px;border-radius:99px;background:linear-gradient(180deg,#C9EB7A,#7CC64F);color:#123A1A;font:700 .95em/1.2 var(--fh);box-shadow:0 4px 10px rgba(76,160,60,.25)}
 .punch{margin:30px auto 0;padding:26px 22px;border-radius:var(--r);background:#fff;box-shadow:var(--sh);text-align:center}
 .punch p{margin:0;font-size:18px;color:var(--mute)}
@@ -603,10 +605,14 @@ footer a{color:var(--navy);font-weight:700}
     <h2 class="h2">Olur</h2>
     <div class="story" id="olStory">
       <p class="nar rv">Я прилетел в Стамбул. Сел в такси.</p>
-      <p class="rv">Говорю, до Кадыкёя довезёте? Говорит, <button class="ol" data-say="Olur">olur</button>.</p>
-      <p class="rv">Говорю, через мост быстрее будет? Говорит, <button class="ol" data-say="Olur">olur</button>.</p>
-      <p class="rv">Говорю, кондиционер включите? Говорит, <button class="ol" data-say="Olur">olur</button>.</p>
-      <p class="rv">Говорю, сколько с меня? Говорит, <button class="ol" data-say="Olur">olur</button>.</p>
+      <p class="rv dl">— До Кадыкёя довезёте?</p>
+      <p class="rv dl th">— <button class="ol" data-say="Olur">Olur</button>.</p>
+      <p class="rv dl">— Через мост быстрее будет?</p>
+      <p class="rv dl th">— <button class="ol" data-say="Olur">Olur</button>.</p>
+      <p class="rv dl">— Кондиционер включите?</p>
+      <p class="rv dl th">— <button class="ol" data-say="Olur">Olur</button>.</p>
+      <p class="rv dl">— Сколько с меня?</p>
+      <p class="rv dl th">— <button class="ol" data-say="Olur">Olur</button>.</p>
       <p class="nar rv">Едем. Жарко. Мост стоит.</p>
       <p class="rv">Кондиционер так и не включился.</p>
       <p class="nar rv">Потом мне объяснили. Olur это не «да». Это «бывает». «Такое вообще случается». «В принципе возможно».</p>
@@ -643,9 +649,12 @@ footer a{color:var(--navy);font-weight:700}
     <h2 class="h2">Что это вообще за время</h2>
     <div class="story">
       <p class="nar rv">У меня был сосед. Сосед жил на балконе. Утром там, вечером там.</p>
-      <p class="rv">Говорю, кофе пьёте? Говорит, <button class="ol" data-say="İçerim">içerim</button>.</p>
-      <p class="rv">Протягиваю стакан. Говорит, не сейчас.</p>
-      <p class="rv">Говорю, так пьёте или нет? Говорит, <button class="ol" data-say="İçerim">içerim</button>. Вообще пью. Как человек.</p>
+      <p class="rv dl">— Кофе пьёте?</p>
+      <p class="rv dl th">— <button class="ol" data-say="İçerim">İçerim</button>.</p>
+      <p class="nar rv">Протягиваю стакан.</p>
+      <p class="rv dl th">— Не сейчас.</p>
+      <p class="rv dl">— Так пьёте или нет?</p>
+      <p class="rv dl th">— <button class="ol" data-say="İçerim">İçerim</button>. Вообще пью. Как человек.</p>
       <p class="nar rv">Сейчас он поливал помидоры.</p>
     </div>
   </div>
@@ -744,12 +753,16 @@ footer a{color:var(--navy);font-weight:700}
     <h2 class="h2">13 особняков</h2>
     <div class="story">
       <p class="nar rv">У меня была учительница. Учительница сказала, правило простое. Один слог, значит -ar. Два слога, значит -ır. Всё.</p>
-      <p class="rv">Говорю, gelmek. Один слог. Значит, geler.</p>
-      <p class="rv">Говорит, <button class="ol" data-say="gelir">gelir</button>.</p>
-      <p class="rv">Говорю, почему. Говорит, исключение.</p>
-      <p class="rv">Говорю, almak. Один слог. Alar. Говорит, <button class="ol" data-say="alır">alır</button>.</p>
-      <p class="rv">Говорю, тоже исключение? Говорит, да.</p>
-      <p class="rv">Говорю, и сколько их. Говорит, тринадцать.</p>
+      <p class="rv dl">— Gelmek. Один слог. Значит, geler?</p>
+      <p class="rv dl th">— <button class="ol" data-say="gelir">Gelir</button>.</p>
+      <p class="rv dl">— Почему?</p>
+      <p class="rv dl th">— Исключение.</p>
+      <p class="rv dl">— Almak. Один слог. Alar?</p>
+      <p class="rv dl th">— <button class="ol" data-say="alır">Alır</button>.</p>
+      <p class="rv dl">— Тоже исключение?</p>
+      <p class="rv dl th">— Да.</p>
+      <p class="rv dl">— И сколько их?</p>
+      <p class="rv dl th">— Тринадцать.</p>
       <p class="nar rv">Думаю, ну хоть не сорок.</p>
       <p class="rv">Я выписал тринадцать глаголов на стикер. Стикер полгода висел на холодильнике.</p>
       <p class="rv">Холодильник выучил. Я нет.</p>
@@ -821,7 +834,7 @@ footer a{color:var(--navy);font-weight:700}
     <h2 class="h2">Где живёт широкое время</h2>
     <p class="lede">Шесть районов. Листай остановки.</p>
     <div class="posters" id="posters">
-      <div class="pst" data-vb="80 120 520 760"><h3>Привычки</h3><div class="ph"><p><b>Her sabah koşarım.</b><span>Каждое утро бегаю.</span><em>Ну, так я говорю.</em></p><button class="say" data-say="Her sabah koşarım." aria-label="Слушать"><svg class="ic"><use href="#i-volume-2"/></svg></button></div></div>
+      <div class="pst" data-vb="80 120 520 760"><h3>Привычки</h3><div class="ph"><p><b>Her sabah koşarım.</b><span>Каждое утро бегаю.</span><em>Ну, так я обещаю себе.</em></p><button class="say" data-say="Her sabah koşarım." aria-label="Слушать"><svg class="ic"><use href="#i-volume-2"/></svg></button></div></div>
       <div class="pst dark" data-vb="380 160 520 760"><h3>Истины и пословицы</h3><div class="ph"><p><b>Damlaya damlaya göl olur.</b><span>Капля за каплей получается озеро.</span><em>Пословицы живут только здесь.</em></p><button class="say" data-say="Damlaya damlaya göl olur." aria-label="Слушать"><svg class="ic"><use href="#i-volume-2"/></svg></button></div></div>
       <div class="pst" data-vb="620 80 520 760"><h3>Вежливая просьба</h3><div class="ph"><p><b>Kapıyı açar mısın?</b><span>Откроешь дверь?</span><em>Мягче, чем приказ «aç!».</em></p><button class="say" data-say="Kapıyı açar mısın?" aria-label="Слушать"><svg class="ic"><use href="#i-volume-2"/></svg></button></div></div>
       <div class="pst dark" data-vb="240 60 520 760"><h3>Предложение</h3><div class="ph"><p><b>Çay içer misin?</b><span>Чай будешь?</span><em>Отказываться нельзя. Это Турция.</em></p><button class="say" data-say="Çay içer misin?" aria-label="Слушать"><svg class="ic"><use href="#i-volume-2"/></svg></button></div></div>
@@ -873,7 +886,7 @@ footer a{color:var(--navy);font-weight:700}
     <div class="wrap narrow" style="padding:0">
       <div class="story" style="margin-top:36px">
         <p class="rv">У тебя есть турецкий. Турецкий на слух.</p>
-        <p class="rv">Сериалы понимаешь. Соседей понимаешь. Таксиста понимаешь. Даже когда он говорит olur.</p>
+        <p class="rv">Сериалы понимаешь. Соседей понимаешь. Таксиста понимаешь. Даже его olur.</p>
         <p class="rv">А потом надо ответить.</p>
         <p class="rv">Ответ в голове есть. Во рту его нет.</p>
         <p class="rv">И ты говоришь «tamam». На всё.</p>
